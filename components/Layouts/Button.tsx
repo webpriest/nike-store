@@ -1,8 +1,22 @@
-const Button = ({label, iconUrl}) => {
+type ButtonProps = {
+    label: string
+    backgroundColor?: string
+    borderColor?: string
+    textColor?: string
+    iconUrl?: string
+    fullWidth?: boolean
+}
+
+const Button = ({label, iconUrl, backgroundColor, borderColor, textColor, fullWidth }: ButtonProps) => {
   return (
-    <button className="flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none bg-red-600 rounded-full text-white hover:opacity-90 transition-opacity">
+    <button className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full cursor-pointer 
+    ${
+      backgroundColor 
+      ? `${backgroundColor} ${borderColor} ${textColor}` 
+      : 'bg-red-600 text-white hover:opacity-90 transition-opacity'
+    } ${fullWidth && 'w-full'}`}>
         {label}
-        <img src={iconUrl} className="ml-2 rounded-full" alt="arrow" />
+        {iconUrl && <img src={iconUrl} className="ml-2 rounded-full" alt="arrow" /> }
     </button>
   )
 }

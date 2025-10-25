@@ -54,17 +54,17 @@ export const products = [
 
 export const services = [
     {
-        imgURL: truckFast,
+        imgURL: "/assets/icons/truck-fast.svg",
         label: "Free shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
-        imgURL: shieldTick,
+        imgURL: "/assets/icons/shield-tick.svg",
         label: "Secure Payment",
         subtext: "Experience worry-free transactions with our secure payment options."
     },
     {
-        imgURL: support,
+        imgURL: "/assets/icons/support.svg",
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
@@ -72,13 +72,13 @@ export const services = [
 
 export const reviews = [
     {
-        imgURL: customer1,
+        imgURL: "/assets/images/customer1.jpeg",
         customerName: 'Morich Brown',
         rating: 4.5,
         feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
     },
     {
-        imgURL: customer2,
+        imgURL: "/assets/images/customer2.svg",
         customerName: 'Lota Mongeskar',
         rating: 4.5,
         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
@@ -118,7 +118,16 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-    { src: facebook, alt: "facebook logo" },
-    { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
+    { 
+        src: "/assets/icons/facebook.svg", 
+        alt: "facebook logo" 
+    },
+    { 
+        src: "/assets/icons/twitter.svg", 
+        alt: "twitter logo" 
+    },
+    { 
+        src: "/assets/icons/instagram.svg", 
+        alt: "instagram logo" 
+    },
 ];

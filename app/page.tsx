@@ -1,4 +1,4 @@
-import { Hero, PopularProducts } from "@/components/Sections";
+import { CustomerReview, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality } from "@/components/Sections";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,29 +13,24 @@ export default function Home() {
       </section>
 
       <section className="padding">
-        Super quality
+        <SuperQuality />
       </section>
 
       <section className="padding-x py-10">
-        Services
+        <Services />
       </section>
 
       <section className="padding">
-        Special offers
+        <SpecialOffers />
       </section>
 
       <section className="bg-pale-blue">
-        Customer Reviews
+        <CustomerReview />
       </section>
 
       <section className="padding-x py-16 sm:py-32 w-full">
-        Subscribe
+        <Subscribe />
       </section>
-
-      {/* Footer */}
-      <footer className="bg-black padding-x padding-t pb-8">
-
-      </footer>
     </main>
   );
 }
